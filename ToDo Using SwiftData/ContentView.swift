@@ -26,7 +26,7 @@ struct ContentView: View {
                                 Text(item.name)
                                 TextField("Update here..", text: $input ).onAppear(){
                                     input = item.name
-                                }
+                                }.padding()
                                 Button("Update") {
                                     updateItem(item)
                                 }
