@@ -1,11 +1,5 @@
-//
-//  ToDo_Using_SwiftDataApp.swift
-//  ToDo Using SwiftData
-//
-//  Created by Jakir Hossain on 20/9/23.
-//
-
 import SwiftUI
+import SwiftData
 
 @main
 struct ToDo_Using_SwiftDataApp: App {
@@ -13,5 +7,6 @@ struct ToDo_Using_SwiftDataApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Item.self)
     }
 }
